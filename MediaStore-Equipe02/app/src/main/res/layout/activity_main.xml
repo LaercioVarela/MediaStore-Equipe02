@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#101827" android:padding="20dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EQUIPE 02  /  LABORATÓRIO MOBILE" android:textColor="#93C5FD" android:textSize="12sp" android:letterSpacing="0.08"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MediaStore" android:textColor="#FFFFFF" android:textSize="32sp" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Consulta otimizada de imagens" android:textColor="#CBD5E1" android:textSize="15sp"/>
+    <Button android:id="@+id/consultar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:backgroundTint="#2563EB" android:textColor="#FFFFFF" android:text="Consultar galeria"/>
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:background="#1E293B" android:textColor="#BFDBFE" android:text="Toque em Consultar galeria para começar."/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="12dp">
+        <LinearLayout android:id="@+id/lista" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+        <Button android:id="@+id/anterior" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Anterior" android:enabled="false"/>
+        <TextView android:id="@+id/pagina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="Página 1" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/proxima" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Próxima" android:enabled="false"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MediaStore • Dispatchers.IO • 10 resultados por página" android:textColor="#94A3B8" android:textSize="11sp" android:gravity="center"/>
+</LinearLayout>
